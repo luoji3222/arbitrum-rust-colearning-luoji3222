@@ -1,0 +1,12 @@
+[package]
+name = "realtime_arbi_gas"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ethers = "2.0.14"  # 锁定具体版本，避免版本漂移
+tokio = { version = "1.0", features = ["full"] }
+eyre = "0.6"
+hex = "0.4"
+reqwest = { version = "0.11", features = ["json"] }  # 补充缺失的reqwest依赖
+url = "2.0"  # 补充url依赖（解决Url类型问题）
